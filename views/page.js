@@ -5,7 +5,10 @@ import {css} from '../assets/css/Css';
 export default function Page(props){
     return(
         <View style={css.textPage}>
-            <Text>O nome da empresa é {props.empresa} e sua funcionária é {props.name}</Text>
+            <Text>
+                O nome da empresa é {props.empresa} e sua funcionária é {props.name}.
+                Comprou o produto {props.produto} na seguinte quantidade: {props.quantidade}.
+            </Text>
         </View>
     );
 }
