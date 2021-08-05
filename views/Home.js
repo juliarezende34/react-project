@@ -1,16 +1,24 @@
 import React, {useState,useEffect} from 'react';
-import {Text, View, Button} from 'react-native';
+import {Text, View, TouchableOpacity, Image} from 'react-native';
+import {css} from '../assets/css/Css';
 
-export default function Home(props){
+export default function Home({navigation}){
     return(
-        <View>
-            <Text>Esse é o componente Home</Text>
-            <Button 
-                title='Ir para Login' 
-                onPress={()=>props.navigation.navigate('Login', {
-                    itemId: 30
-                })} 
-            />
+        <View style={css.container2}>
+            <TouchableOpacity
+                style={css.homeButton}
+                onPress={() => navigation.navigate('Login')}
+            >
+                <Image source={require('../assets/img/loginIcon.png')}/>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                
+                onPress={() => navigation.navigate('Rastreio')}
+            >
+                <Image source={require('../assets/img/infoIcon.png')}/>
+            </TouchableOpacity>
+
         </View>
     );
 }
