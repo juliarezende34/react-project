@@ -7,7 +7,7 @@ export default function Login(){
     return(
         <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[css.container, css.darkbg]}>
             <View style={css.loginIcon}>
-                <Image source={require('../assets/img/icon.png')}/>
+                <Image source={require('../assets/icon.png')}/>
             </View>
 
             <View>
