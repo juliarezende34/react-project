@@ -16,6 +16,11 @@ const css = StyleSheet.create({
       justifyContent: 'center',
     },
 
+    container3:{
+      flexDirection:'row',
+      padding: 10,
+    },
+
     textPage:{
         backgroundColor:'#add8e6',
         padding: 20
@@ -26,7 +31,7 @@ const css = StyleSheet.create({
     },
 
     darkbg:{
-      backgroundColor:"#333"
+      backgroundColor:"white"
     },
 
     loginMsg:(text='none')=>({
@@ -46,18 +51,22 @@ const css = StyleSheet.create({
         fontSize: 19,
         padding: 7,
         paddingRight: '60%',
-        marginBottom: 15
+        marginBottom: 15,
+        borderWidth: 1,
+        borderColor: 'gray',
+        borderRadius:20
     },
 
     loginButton:{
         padding: 12,
-        backgroundColor: "#A6E7E3",
+        backgroundColor: "#5FB0B6",
         alignSelf:"center",
-        borderRadius:5
+        borderRadius:10,
+        marginBottom:20
     },
 
     loginButtonText:{
-      fontWeight:'bold',
+      
       fontSize:22,
       color:'#333'
     },
@@ -65,7 +74,19 @@ const css = StyleSheet.create({
     loginIcon:{
       marginBottom:50,
 
+    },
+
+    loginHeader:{
+      alignSelf: 'baseline',
+      marginLeft: 20,
+      marginBottom:50,
+    },
+
+    loginHeaderText:{
+      color: '#5FB0B6',
+      fontSize:30
     }
+
 
   });
 

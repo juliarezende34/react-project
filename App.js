@@ -21,7 +21,10 @@ export default function App() {
             headerTintColor: 'white',
           }}
         />
-        <Stack.Screen name="Login" options={{headerShown:false}} component={Login} />
+        <Stack.Screen name="Login" options={{
+          title:' ',
+          headerStyle:{backgroundColor: "#5FB0B6"}
+        }} component={Login} />
         <Stack.Screen name="Rastreio" component={Rastreio} />
         {/*<Stack.Screen name="AreaRestrita" component={AreaRestrita} />*/}
       </Stack.Navigator>
