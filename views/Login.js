@@ -33,7 +33,7 @@ export default function Login(){
                 </TouchableOpacity>
             </View>
 
-            <View>
+            <View style={{flexDirection:'row', flexWrap:'wrap'}}>
                 <Text>Não tem uma conta?</Text>
                 <Text style={{color: 'blue', alignSelf:'center', textDecorationLine:'underline'}} onPress={()=> Linking.openURL('http://google.com')}>Cadastre-se</Text>
                 

@@ -32,7 +32,7 @@ export default function Cadastro(){
                 </TouchableOpacity>
             </View>
 
-            <View>
+            <View style={{flexDirection:'row', flexWrap:'wrap'}}>
                 <Text>Já tem uma conta?</Text>
                 <Text style={{color: 'blue', alignSelf:'center', textDecorationLine:'underline'}}>Logar</Text>
                 
