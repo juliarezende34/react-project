@@ -18,7 +18,7 @@ const css = StyleSheet.create({
 
     container3:{
       flexDirection:'row',
-      padding: 10,
+      padding: 5,
     },
 
     textPage:{
@@ -85,8 +85,41 @@ const css = StyleSheet.create({
     loginHeaderText:{
       color: '#5FB0B6',
       fontSize:30
-    }
+    },
 
+    cadastroHeader:{
+      alignSelf: 'baseline',
+      marginLeft: 20,
+      marginBottom:50,
+    },
+
+    cadastroHeaderText:{
+      color: '#5FB0B6',
+      fontSize:30
+    },
+
+    cadastroform:{
+      width: "80%"
+    },
+
+    cadastroInput:{
+        backgroundColor: "#fff",
+        fontSize: 19,
+        padding: 7,
+        paddingRight: '40%',
+        marginBottom: 15,
+        borderWidth: 1,
+        borderColor: 'gray',
+        borderRadius:20
+    },
+    
+    cadastroButton:{
+        padding: 12,
+        backgroundColor: "#5FB0B6",
+        alignSelf:"center",
+        borderRadius:10,
+        marginBottom:20
+    },
 
   });
 

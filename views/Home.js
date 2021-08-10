@@ -14,9 +14,9 @@ export default function Home({navigation}){
 
             <TouchableOpacity
                 
-                onPress={() => navigation.navigate('Rastreio')}
+                onPress={() => navigation.navigate('Cadastro')}
             >
-                <Image source={require('../assets/img/infoIcon.png')}/>
+                <Image source={require('../assets/cadastroIcon.png')}/>
             </TouchableOpacity>
 
         </View>
