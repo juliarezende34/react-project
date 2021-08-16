@@ -3,7 +3,7 @@ import {Text, View, Button, Alert } from 'react-native';
 import {css} from './assets/css/Css';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import {Home, Login, Cadastro} from './views';
+import {Home, Login, Cadastro, Busca} from './views';
 
 export default function App() {
  
@@ -29,6 +29,11 @@ export default function App() {
           title: ' ',
           headerStyle:{backgroundColor: "#5fb0b6"}
         }} component={Cadastro} />
+        <Stack.Screen name="Busca" options={{
+          title: 'Busca',
+          headerTintColor:'white',
+          headerStyle:{backgroundColor: "#5fb0b6"}
+        }} component={Busca} />
         {/*<Stack.Screen name="AreaRestrita" component={AreaRestrita} />*/}
       </Stack.Navigator>
     </NavigationContainer>

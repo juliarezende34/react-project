@@ -19,6 +19,13 @@ export default function Home({navigation}){
                 <Image source={require('../assets/cadastroIcon.png')}/>
             </TouchableOpacity>
 
+            <TouchableOpacity
+                style={css.homeButton}
+                onPress={() => navigation.navigate('Busca')}
+            >
+                <Image source={require('../assets/buscaIcon.png')}/>
+            </TouchableOpacity>
+
         </View>
     );
 }

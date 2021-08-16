@@ -21,6 +21,16 @@ const css = StyleSheet.create({
       padding: 5,
     },
 
+    container4: {
+      flex: 1,
+      backgroundColor: '#fff',
+      flexDirection:'row',
+    },
+
+    container5: {
+      flexDirection:'row',
+    },
+
     textPage:{
         backgroundColor:'#add8e6',
         padding: 20
@@ -121,6 +131,29 @@ const css = StyleSheet.create({
         marginBottom:20
     },
 
+    buscaForm:{
+      width: "90%"
+    },
+
+    buscaInput:{
+        backgroundColor: "#fff",
+        fontSize: 19,
+        padding: 7,
+        paddingRight: '60%',
+        marginBottom: 15,
+        borderWidth: 1,
+        borderColor: 'gray',
+        borderRadius:10,
+        marginTop: 25,
+        marginLeft:10
+        
+    },
+
+    buscaIcon:{
+      width: 20,
+      height: 20
+    }
+    
   });
 
   export {css};
