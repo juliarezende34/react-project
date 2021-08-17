@@ -52,33 +52,20 @@ const css = StyleSheet.create({
       display: text
     }),
 
-    loginform:{
+    form:{
       width: "80%"
     },
 
-    loginInput:{
+    input:{
         backgroundColor: "#fff",
         fontSize: 19,
         padding: 7,
         paddingRight: '60%',
         marginBottom: 15,
         borderWidth: 1,
-        borderColor: 'gray',
-        borderRadius:20
-    },
-
-    loginButton:{
-        padding: 12,
-        backgroundColor: "#5FB0B6",
-        alignSelf:"center",
-        borderRadius:10,
-        marginBottom:20
-    },
-
-    loginButtonText:{
-      
-      fontSize:22,
-      color:'#333'
+        borderColor: '#847575',
+        borderRadius:20,
+        marginTop:10
     },
 
     loginIcon:{
@@ -86,49 +73,30 @@ const css = StyleSheet.create({
 
     },
 
-    loginHeader:{
+    header:{
       alignSelf: 'baseline',
       marginLeft: 20,
       marginBottom:50,
     },
 
-    loginHeaderText:{
-      color: '#5FB0B6',
-      fontSize:30
-    },
-
-    cadastroHeader:{
-      alignSelf: 'baseline',
-      marginLeft: 20,
-      marginBottom:50,
-    },
-
-    cadastroHeaderText:{
-      color: '#5FB0B6',
-      fontSize:30
-    },
-
-    cadastroform:{
-      width: "80%"
-    },
-
-    cadastroInput:{
-        backgroundColor: "#fff",
-        fontSize: 19,
-        padding: 7,
-        paddingRight: '40%',
-        marginBottom: 15,
-        borderWidth: 1,
-        borderColor: 'gray',
-        borderRadius:20
+    headerText:{
+      color: '#318e89',
+      fontSize: 25
     },
     
-    cadastroButton:{
-        padding: 12,
-        backgroundColor: "#5FB0B6",
+    button:{
+        backgroundColor: "#A6E6E3",
         alignSelf:"center",
-        borderRadius:10,
-        marginBottom:20
+        borderRadius:5,
+        width: 96,
+        height: 34,
+        paddingTop: 8
+    },
+
+    buttonText:{
+      fontSize: 15,
+      color: '#4a4a4a',
+      alignSelf:'center'
     },
 
     buscaForm:{
@@ -152,6 +120,12 @@ const css = StyleSheet.create({
     buscaIcon:{
       width: 20,
       height: 20
+    },
+
+    formText:{
+      fontSize:17,
+      fontWeight:'bold',
+      color: "#847575"
     }
     
   });

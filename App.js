@@ -17,7 +17,7 @@ export default function App() {
           component={Home} 
           options = {{
             title: "Bem Vindo",
-            headerStyle:{backgroundColor:'lightblue'},
+            headerStyle:{backgroundColor:'#5FB0B6'},
             headerTintColor: 'white',
           }}
         />

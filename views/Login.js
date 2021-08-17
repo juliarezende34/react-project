@@ -7,8 +7,8 @@ export default function Login(){
     return(
         <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[css.container, css.darkbg]}>
             
-            <View style={css.loginHeader}>
-                <Text style={css.loginHeaderText}>Login</Text>
+            <View style={css.header}>
+                <Text style={css.headerText}>Login</Text>
             </View>
             
 
@@ -16,11 +16,13 @@ export default function Login(){
                 <Text style={css.loginMsg(display)}>Usuário ou senha inválidos!</Text>
             </View>
 
-            <View style={css.loginForm}>
-                <TextInput style={css.loginInput} placeholder='Usuário:' />
-                <TextInput style={css.loginInput} placeholder='Senha:'secureTextEntry={true}/>
-                <TouchableOpacity style={css.loginButton}  onPress={()=>setDisplay('flex')}>
-                    <Text style={css.loginButtonText}>Entrar</Text>
+            <View style={css.form}>
+                <Text style={css.formText}>Email:</Text>
+                <TextInput style={css.input} placeholder='example@gmail.com' />
+                <Text style={css.formText}>Senha:</Text>
+                <TextInput style={css.input} secureTextEntry={true}/>
+                <TouchableOpacity style={css.button}  onPress={()=>setDisplay('flex')}>
+                    <Text style={css.buttonText}>Login</Text>
                 </TouchableOpacity>
             </View>
 
@@ -35,7 +37,7 @@ export default function Login(){
 
             <View style={{flexDirection:'row', flexWrap:'wrap'}}>
                 <Text>Não tem uma conta?</Text>
-                <Text style={{color: 'blue', alignSelf:'center', textDecorationLine:'underline'}} onPress={()=> Linking.openURL('http://google.com')}>Cadastre-se</Text>
+                <Text style={{color: '#318e89', alignSelf:'center', textDecorationLine:'underline'}} onPress={()=> Linking.openURL('http://google.com')}>Cadastre-se</Text>
                 
             </View>
 

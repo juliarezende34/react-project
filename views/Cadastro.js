@@ -7,19 +7,25 @@ export default function Cadastro(){
     return(
         <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[css.container, css.darkbg]}>
             
-            <View style={css.cadastroHeader}>
-                <Text style={css.cadastroHeaderText}>Cadastro</Text>
+            <View style={css.header}>
+                <Text style={css.headerText}>Cadastro</Text>
             </View>
             
-            <View style={css.cadastroForm}>
-                <TextInput style={css.cadastroInput} placeholder='Nome:' />
-                <TextInput style={css.cadastroInput} placeholder='Email'/>
-                <TextInput style={css.cadastroInput} placeholder='Username'/>
-                <TextInput style={css.cadastroInput} placeholder='Telefone'/>
-                <TextInput style={css.cadastroInput} placeholder='Senha:'secureTextEntry={true}/>
-                <TextInput style={css.cadastroInput} placeholder='Confirme a senha:'secureTextEntry={true}/>
-                <TouchableOpacity style={css.cadastroButton}>
-                    <Text style={css.cadastroButtonText}>Cadastrar</Text>
+            <View style={css.form}>
+                <Text style={css.formText}>Nome:</Text>
+                <TextInput style={css.input} placeholder='@nome'/>
+                <Text style={css.formText}>Email:</Text>
+                <TextInput style={css.input} placeholder='example@gmail.com'/>
+                <Text style={css.formText}>Username:</Text>
+                <TextInput style={css.input} placeholder='@user'/>
+                <Text style={css.formText}>Telefone:</Text>
+                <TextInput style={css.input} placeholder='@user'/>
+                <Text style={css.formText}>Senha:</Text>
+                <TextInput style={css.input} secureTextEntry={true}/>
+                <Text style={css.formText}>Confirme sua senha:</Text>
+                <TextInput style={css.input} secureTextEntry={true}/>
+                <TouchableOpacity style={css.button}>
+                    <Text style={css.buttonText}>Cadastrar</Text>
                 </TouchableOpacity>
             </View>
 
@@ -34,7 +40,7 @@ export default function Cadastro(){
 
             <View style={{flexDirection:'row', flexWrap:'wrap'}}>
                 <Text>Já tem uma conta?</Text>
-                <Text style={{color: 'blue', alignSelf:'center', textDecorationLine:'underline'}}>Logar</Text>
+                <Text style={{color: '#318e89', alignSelf:'center', textDecorationLine:'underline'}}>Logar</Text>
                 
             </View>
 
