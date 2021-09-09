@@ -29,15 +29,6 @@ export default function Cadastro(){
                 </TouchableOpacity>
             </View>
 
-            <View style={css.container3}>
-                <TouchableOpacity>
-                    <Image source={require('../assets/google.png')}/>
-                </TouchableOpacity>
-                <TouchableOpacity>
-                    <Image source={require('../assets/fb.png')}/>
-                </TouchableOpacity>
-            </View>
-
             <View style={{flexDirection:'row', flexWrap:'wrap'}}>
                 <Text>Já tem uma conta?</Text>
                 <Text style={{color: '#318e89', alignSelf:'center', textDecorationLine:'underline'}}>Logar</Text>

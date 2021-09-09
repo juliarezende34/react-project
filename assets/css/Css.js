@@ -12,7 +12,6 @@ const css = StyleSheet.create({
     //USADO NA HOME PAGE - NÃO NECESSÁRIO NO PROJETO FINAL
     container2: {
       flex: 1,
-      flexDirection:'row',
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'center',
@@ -44,7 +43,7 @@ const css = StyleSheet.create({
 
     //USADO NA HOME PAGE - NÃO NECESSÁRIO NO PROJETO FINAL
     homeButton:{
-      marginRight:40
+      margin: 30,
     },
 
     //Cor de fundo das páginas

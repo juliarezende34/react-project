@@ -26,6 +26,19 @@ export default function Home({navigation}){
                 <Image source={require('../assets/buscaIcon.png')}/>
             </TouchableOpacity>
 
+            <TouchableOpacity
+                style={css.homeButton}
+                onPress={() => navigation.navigate('PerfilPessoal')}
+            >
+                <Image source={require('../assets/perfilPessoalIcon.png')}/>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                style={css.homeButton}
+                onPress={() => navigation.navigate('PerfilEmpresa')}
+            >
+                <Image source={require('../assets/perfilEmpresaIcon.png')}/>
+            </TouchableOpacity>
         </View>
     );
 }
