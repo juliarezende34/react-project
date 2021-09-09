@@ -1,7 +1,7 @@
 import { StyleSheet } from "react-native";
 
 const css = StyleSheet.create({
-    //Container principal - Login e Cadastro 
+    //Container principal - Login e Cadastro - ok
     container: {
       flex: 1,
       backgroundColor: '#fff',
@@ -17,15 +17,8 @@ const css = StyleSheet.create({
       justifyContent: 'center',
     },
 
-    //Container das imagens das opções de autenticação - Login e Cadastro
-    container3:{
-      flexDirection:'row',
-      padding: 5,
-    },
-
-    //Container principal - Busca
+    //Container principal - Busca - ok
     container4: {
-      flex: 1,
       backgroundColor: '#fff',
       flexDirection:'row',
     },
@@ -44,9 +37,10 @@ const css = StyleSheet.create({
     //USADO NA HOME PAGE - NÃO NECESSÁRIO NO PROJETO FINAL
     homeButton:{
       margin: 30,
+      padding: 20
     },
 
-    //Cor de fundo das páginas
+    //Cor de fundo das páginas - ok
     darkbg:{
       backgroundColor:"white"
     },
@@ -62,7 +56,7 @@ const css = StyleSheet.create({
       fontWeight:"bold",
       fontSize: 22,
       color:"red",
-      marginBottom: 15,
+      marginBottom: '10%',
       display: text
     }),
 
@@ -71,82 +65,74 @@ const css = StyleSheet.create({
       width: "80%"
     },
 
-    //Formatação do input do form - Login e Cadastro
+    //Formatação do input do form - Login e Cadastro - ok 
     input:{
         backgroundColor: "#fff",
         fontSize: 19,
-        padding: 7,
-        paddingRight: '60%',
-        marginBottom: 15,
+        padding: '2%',
+        paddingRight: '5%',
+        paddingLeft: '5%',
+        marginBottom: '7%',
         borderWidth: 1,
         borderColor: '#847575',
         borderRadius:20,
-        marginTop:10
+        marginTop: '3%'
     },
 
-    //Formatação do espaço do título da página - Login e Cadastro
+    //Formatação do espaço do título da página - Login e Cadastro - ok
     header:{
       alignSelf: 'baseline',
-      marginLeft: 20,
-      marginBottom:50,
+      marginLeft: '9%',
+      marginBottom: '10%',
     },
 
-    //Formatação do texto do título da página - Login e Cadastro
+    //Formatação do texto do título da página - Login e Cadastro - ok 
     headerText:{
       color: '#318e89',
-      fontSize: 25
+      fontSize: 25,
     },
     
-    //Formatação do botão - Login e Cadastro
+    //Formatação do botão - Login e Cadastro -ok
     button:{
         backgroundColor: "#A6E6E3",
         alignSelf:"center",
         borderRadius:5,
-        width: 96,
-        height: 34,
-        paddingTop: 8
+        width: '30%',
+        height: '6%',
+        paddingTop: '3%'
     },
 
-    //Formatação do texto do botão - Login e Cadastro
+    //Formatação do texto do botão - Login e Cadastro - ok
     buttonText:{
       fontSize: 15,
       color: '#4a4a4a',
       alignSelf:'center'
     },
 
-    //Formatação do texto usado antes do input no form - Login e Cadastro
+    //Formatação do texto usado antes do input no form - Login e Cadastro - ok
     formText:{
       fontSize:17,
       fontWeight:'bold',
       color: "#847575"
     },
 
-    //Formatação do container do form - Busca
+    //Formatação do container do form - Busca - ok 
     buscaForm:{
       width: "90%"
     },
 
-    //Formatação do input do form - Busca
+    //Formatação do input do form - Busca - ok
     buscaInput:{
         backgroundColor: "#fff",
         fontSize: 19,
-        padding: 7,
-        paddingRight: '60%',
-        marginBottom: 15,
+        padding: '3%',
         borderWidth: 1,
         borderColor: 'gray',
-        borderRadius:10,
-        marginTop: 25,
-        marginLeft:10
+        borderRadius: 10,
+        marginTop: '5%',
+        marginLeft:'3%'
         
     },
-
-    //Imagem da lupa ao lado da caixa de digitação - Busca
-    buscaIcon:{
-      width: 20,
-      height: 20
-    },
-  
   
   });
 

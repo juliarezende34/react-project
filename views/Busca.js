@@ -9,7 +9,6 @@ export default function Busca(){
             
             <View style={css.buscaForm}>
                 <TextInput style={css.buscaInput} placeholder='' />
-                <Image source={require('../assets/buscaIcon.png')} style={css.buscaIcon}/>
 
             </View>
            
