@@ -5,7 +5,7 @@ import {css} from '../assets/css/Css';
 export default function Busca(){
     
     return(
-        <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[css.container4, css.darkbg]}>
+        <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[css.containerBusca, css.darkbg]}>
             
             <View style={css.buscaForm}>
                 <TextInput style={css.buscaInput} placeholder='' />

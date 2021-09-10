@@ -2,7 +2,7 @@ import { StyleSheet } from "react-native";
 
 const css = StyleSheet.create({
     //Container principal - Login e Cadastro - ok
-    container: {
+    containerLoginCadastro: {
       flex: 1,
       backgroundColor: '#fff',
       alignItems: 'center',
@@ -18,7 +18,7 @@ const css = StyleSheet.create({
     },
 
     //Container principal - Busca - ok
-    container4: {
+    containerBusca: {
       backgroundColor: '#fff',
       flexDirection:'row',
     },
@@ -61,12 +61,12 @@ const css = StyleSheet.create({
     }),
 
     //Formatação do container do form - Login e Cadastro
-    form:{
+    formLoginCadastro:{
       width: "80%"
     },
 
     //Formatação do input do form - Login e Cadastro - ok 
-    input:{
+    inputLoginCadastro:{
         backgroundColor: "#fff",
         fontSize: 19,
         padding: '2%',
@@ -80,20 +80,20 @@ const css = StyleSheet.create({
     },
 
     //Formatação do espaço do título da página - Login e Cadastro - ok
-    header:{
+    headerLoginCadastro:{
       alignSelf: 'baseline',
       marginLeft: '9%',
       marginBottom: '10%',
     },
 
     //Formatação do texto do título da página - Login e Cadastro - ok 
-    headerText:{
+    headerTextLoginCadastro:{
       color: '#318e89',
       fontSize: 25,
     },
     
     //Formatação do botão - Login e Cadastro -ok
-    button:{
+    buttonLoginCadastro:{
         backgroundColor: "#A6E6E3",
         alignSelf:"center",
         borderRadius:5,
@@ -103,14 +103,14 @@ const css = StyleSheet.create({
     },
 
     //Formatação do texto do botão - Login e Cadastro - ok
-    buttonText:{
+    buttonTextLoginCadastro:{
       fontSize: 15,
       color: '#4a4a4a',
       alignSelf:'center'
     },
 
     //Formatação do texto usado antes do input no form - Login e Cadastro - ok
-    formText:{
+    formTextLoginCadastro:{
       fontSize:17,
       fontWeight:'bold',
       color: "#847575"

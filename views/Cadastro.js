@@ -5,27 +5,27 @@ import {css} from '../assets/css/Css';
 export default function Cadastro(){
     
     return(
-        <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[css.container, css.darkbg]}>
+        <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[css.containerLoginCadastro, css.darkbg]}>
             
-            <View style={css.header}>
-                <Text style={css.headerText}>Cadastro</Text>
+            <View style={css.headerLoginCadastro}>
+                <Text style={css.headerTextLoginCadastro}>Cadastro</Text>
             </View>
             
-            <View style={css.form}>
-                <Text style={css.formText}>Nome:</Text>
-                <TextInput style={css.input} placeholder='@nome'/>
-                <Text style={css.formText}>Email:</Text>
-                <TextInput style={css.input} placeholder='example@gmail.com'/>
-                <Text style={css.formText}>Username:</Text>
-                <TextInput style={css.input} placeholder='@user'/>
-                <Text style={css.formText}>Telefone:</Text>
-                <TextInput style={css.input} placeholder='@user'/>
-                <Text style={css.formText}>Senha:</Text>
-                <TextInput style={css.input} secureTextEntry={true}/>
-                <Text style={css.formText}>Confirme sua senha:</Text>
-                <TextInput style={css.input} secureTextEntry={true}/>
-                <TouchableOpacity style={css.button}>
-                    <Text style={css.buttonText}>Cadastrar</Text>
+            <View style={css.formLoginCadastro}>
+                <Text style={css.formTextLoginCadastro}>Nome:</Text>
+                <TextInput style={css.inputLoginCadastro} placeholder='@nome'/>
+                <Text style={css.formTextLoginCadastro}>Email:</Text>
+                <TextInput style={css.inputLoginCadastro} placeholder='example@gmail.com'/>
+                <Text style={css.formTextLoginCadastro}>Username:</Text>
+                <TextInput style={css.inputLoginCadastro} placeholder='@user'/>
+                <Text style={css.formTextLoginCadastro}>Telefone:</Text>
+                <TextInput style={css.inputLoginCadastro} placeholder='@user'/>
+                <Text style={css.formTextLoginCadastro}>Senha:</Text>
+                <TextInput style={css.inputLoginCadastro} secureTextEntry={true}/>
+                <Text style={css.formTextLoginCadastro}>Confirme sua senha:</Text>
+                <TextInput style={css.inputLoginCadastro} secureTextEntry={true}/>
+                <TouchableOpacity style={css.buttonLoginCadastro}>
+                    <Text style={css.buttonTextLoginCadastro}>Cadastrar</Text>
                 </TouchableOpacity>
             </View>
 
