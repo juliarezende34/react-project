@@ -19,7 +19,7 @@ const css = StyleSheet.create({
 
     //Container principal - Busca - ok
     containerBusca: {
-      backgroundColor: '#fff',
+      backgroundColor: '#F2F2F2',
       flexDirection:'row',
     },
 
