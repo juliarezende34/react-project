@@ -94,12 +94,12 @@ const css = StyleSheet.create({
     
     //Formatação do botão - Login e Cadastro -ok
     buttonLoginCadastro:{
-        backgroundColor: "#A6E6E3",
-        alignSelf:"center",
-        borderRadius:5,
-        width: '30%',
-        height: '6%',
-        paddingTop: '3%'
+      backgroundColor: "#A6E6E3",
+      alignSelf:"center",
+      borderRadius:5,
+      width: '30%',
+      height: '6%',
+      paddingTop: '3%'
     },
 
     //Formatação do texto do botão - Login e Cadastro - ok
