@@ -8,12 +8,7 @@ export default function Login(){
         <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[css.containerLoginCadastro, css.darkbg]}>
             
             <View style={css.headerLoginCadastro}>
-                <Text style={css.headerTextLoginCadastro}>Login</Text>
-            </View>
-            
-
-            <View>
-                <Text style={css.loginMsg(display)}>Usuário ou senha inválidos!</Text>
+                <Text style={css.headerTextLogin}>Login</Text>
             </View>
 
             <View style={css.formLoginCadastro}>
@@ -21,7 +16,7 @@ export default function Login(){
                 <TextInput style={css.inputLoginCadastro} placeholder='example@gmail.com' />
                 <Text style={css.formTextLoginCadastro}>Senha:</Text>
                 <TextInput style={css.inputLoginCadastro} secureTextEntry={true}/>
-                <TouchableOpacity style={css.buttonLoginCadastro}  onPress={()=>setDisplay('flex')}>
+                <TouchableOpacity style={css.buttonLogin}  onPress={()=>setDisplay('flex')}>
                     <Text style={css.buttonTextLoginCadastro}>Login</Text>
                 </TouchableOpacity>
             </View>

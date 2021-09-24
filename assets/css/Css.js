@@ -1,6 +1,9 @@
 import { StyleSheet } from "react-native";
+import EStyleSheet from "react-native-extended-stylesheet";
+import responsividade from "../../utils/responsividade";
 
-const css = StyleSheet.create({
+
+const css = EStyleSheet.create({
     //Container principal - Login e Cadastro - ok
     containerLoginCadastro: {
       flex: 1,
@@ -52,17 +55,18 @@ const css = StyleSheet.create({
     },
 
     //Mensagem de erro para o Login
-    loginMsg:(text='none')=>({
+    /*loginMsg:(text='none')=>({
       fontWeight:"bold",
       fontSize: 22,
       color:"red",
       marginBottom: '10%',
       display: text
-    }),
+    }),*/
 
     //Formatação do container do form - Login e Cadastro
     formLoginCadastro:{
       width: "80%"
+      //marginTop: '-5%'
     },
 
     //Formatação do input do form - Login e Cadastro - ok 
@@ -87,19 +91,36 @@ const css = StyleSheet.create({
     },
 
     //Formatação do texto do título da página - Login e Cadastro - ok 
-    headerTextLoginCadastro:{
+    headerTextCadastro:{
+      color: '#318e89',
+      fontSize: 25,
+      //marginTop: '30%'
+    },
+
+    headerTextLogin:{
       color: '#318e89',
       fontSize: 25,
     },
     
     //Formatação do botão - Login e Cadastro -ok
-    buttonLoginCadastro:{
+    buttonCadastro:{
       backgroundColor: "#A6E6E3",
       alignSelf:"center",
       borderRadius:5,
       width: '30%',
       height: '6%',
       paddingTop: '3%'
+      //marginBottom: '2%'
+    },
+
+    buttonLogin:{
+      backgroundColor: "#A6E6E3",
+      alignSelf:"center",
+      borderRadius:5,
+      width: '30%',
+      height: '13%',
+      paddingTop: '3%'
+      //marginBottom: '-14%'
     },
 
     //Formatação do texto do botão - Login e Cadastro - ok
@@ -118,7 +139,9 @@ const css = StyleSheet.create({
 
     //Formatação do container do form - Busca - ok 
     buscaForm:{
-      width: "90%"
+      width: "90%",
+      backgroundColor: '#F2F2F2'
+      //width: '100%'
     },
 
     //Formatação do input do form - Busca - ok
@@ -130,9 +153,41 @@ const css = StyleSheet.create({
         borderColor: 'gray',
         borderRadius: 10,
         marginTop: '5%',
-        marginLeft:'3%'
-        
+        marginLeft:'3%' 
+        //marginLeft: '5%'
+        //marginRight: '5%'
+        //width: '90%'
     },
+
+    '@media (min-height: 2300)': {
+      formLoginCadastro:{
+        marginTop: '-5%',
+      },
+      
+      headerTextCadastro:{
+        marginTop: '30%',
+      },
+      
+      headerTextLogin:{},
+      
+      buttonCadastro:{
+        marginBottom: '2%',
+      },
+      
+      buttonLogin:{
+        marginBottom: '-14%',
+      },
+      
+      buscaForm:{
+        width: '100%',
+      },
+      
+      buscaInput:{
+        width: '90%',
+        marginLeft:'5%',
+        marginRight:'5%',
+      },
+    }
   
   });
 

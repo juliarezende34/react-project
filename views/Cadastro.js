@@ -8,7 +8,7 @@ export default function Cadastro(){
         <KeyboardAvoidingView behavior={Platform.OS == "ios" ? "padding" : "height"} style={[css.containerLoginCadastro, css.darkbg]}>
             
             <View style={css.headerLoginCadastro}>
-                <Text style={css.headerTextLoginCadastro}>Cadastro</Text>
+                <Text style={css.headerTextCadastro}>Cadastro</Text>
             </View>
             
             <View style={css.formLoginCadastro}>
@@ -24,7 +24,7 @@ export default function Cadastro(){
                 <TextInput style={css.inputLoginCadastro} secureTextEntry={true}/>
                 <Text style={css.formTextLoginCadastro}>Confirme sua senha:</Text>
                 <TextInput style={css.inputLoginCadastro} secureTextEntry={true}/>
-                <TouchableOpacity style={css.buttonLoginCadastro}>
+                <TouchableOpacity style={css.buttonCadastro}>
                     <Text style={css.buttonTextLoginCadastro}>Cadastrar</Text>
                 </TouchableOpacity>
             </View>

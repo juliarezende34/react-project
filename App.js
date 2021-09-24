@@ -1,9 +1,12 @@
 import React, {useState,useEffect} from 'react';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import {Text, View, Button, Alert } from 'react-native';
 import {css} from './assets/css/Css';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import {Home, Login, Cadastro, Busca, PerfilPessoal, PerfilEmpresa} from './views';
+
+EStyleSheet.build();
 
 export default function App() {
  
