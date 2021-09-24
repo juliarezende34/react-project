@@ -4,7 +4,7 @@ import {Text, View, Button, Alert } from 'react-native';
 import {css} from './assets/css/Css';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import {Home, Login, Cadastro, Busca, PerfilPessoal, PerfilEmpresa} from './views';
+import {Home, Login, Cadastro, Busca} from './views';
 
 EStyleSheet.build();
 
@@ -39,17 +39,6 @@ export default function App() {
           headerTintColor:'white',
           headerStyle:{backgroundColor: "#5fb0b6"}
         }} component={Busca} />
-        <Stack.Screen name="PerfilPessoal" options={{
-          title: 'Perfil Pessoal',
-          headerTintColor:'white',
-          headerStyle:{backgroundColor: "#5fb0b6"}
-        }} component={PerfilPessoal} />
-        <Stack.Screen name="PerfilEmpresa" options={{
-          title: 'Perfil Empresa',
-          headerTintColor:'white',
-          headerStyle:{backgroundColor: "#5fb0b6"}
-        }} component={PerfilEmpresa} />
-        {/*<Stack.Screen name="AreaRestrita" component={AreaRestrita} />*/}
       </Stack.Navigator>
     </NavigationContainer>
   );
